@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
   <!-- CSS links -->
   <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
   <!-- JS scripts -->
   <script src="./dist/main.js"></script>
@@ -100,50 +101,75 @@
      <!-- Portfolio -->
      <section id="projects" class="flex-col justify-center">
       <h1>Projects</h1>
-      
-      <div class="section flex-row">
-        <div class="project_details flex-col align-start justify-center">
-          <a href="https://reels.onrender.com/"><h2>Reels</h2></a>
-          <p class="start">A clone of an award-winning ecommerce site, <a href="https://www.rollienation.com/">Rollies</a>, where users can do online shopping, leave a review of products they bought, and search for various online store products.</p>
-          <div class="project_technology">
-            <span>React/Redux</span>
-            <span>JavaScript</span>
-            <span>Ruby on Rails</span>
-            <span>PostgreSQL</span>
-          </div>
-          <div class="project_link">
-            <a href="https://github.com/fee3fitri/reels" target="_blank"><i data-feather="github"></i></a>
-            <a href="https://reels.onrender.com/" target="_blank"><i data-feather="external-link"></i></a>
-          </div>
-        </div>
-        <picture>
-          <a href="https://reels.onrender.com/"><img src="./src/assets/reels.jpg" alt="reels screenshot" /></a>
-        </picture>
-      </div>
 
-      <div class="section flex-row">
-        <picture>
-          <a href="https://treasure-mhx1.onrender.com/"><img src="./src/assets/treasure.jpg" alt="reels screenshot" /></a>
-        </picture>
-        <div class="project_details flex-col align-end justify-center">
-          <a href="https://treasure-mhx1.onrender.com/"><h2>Treasure</h2></a>
-          <p class="end">A clone of an award-winning ecommerce site, <a href="https://www.rollienation.com/">Rollies</a>, where users can do online shopping, leave a review of products they bought, and search for various online store products.</p>
-          <div class="project_technology">
-            <span>React/Redux</span>
-            <span>MongoDB</span>
-            <span>Express.js</span>
-            <span>Node.js</span>
+      <div class="swiper projectSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex-row">
+            <div class="project_details flex-col align-start justify-center">
+              <a href="https://reels.onrender.com/" target="_blank"><h2>Reels</h2></a>
+              <p class="start">A clone of an award-winning ecommerce site, <a href="https://www.rollienation.com/" target="_blank">Rollies</a>, where users can do online shopping, leave a review of products they bought, and search for various online store products.</p>
+              <div class="project_technology">
+                <span>React/Redux</span>
+                <span>JavaScript</span>
+                <span>Ruby on Rails</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/fee3fitri/reels" target="_blank"><i data-feather="github"></i></a>
+                <a href="https://reels.onrender.com/" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
+            <picture>
+              <a href="https://reels.onrender.com/" target="_blank"><img src="./src/assets/reels.jpg" alt="reels screenshot" /></a>
+            </picture>
           </div>
-          <div class="project_link">
-            <a href="https://github.com/safetyboi/Treasure" target="_blank"><i data-feather="github"></i></a>
-            <a href="https://treasure-mhx1.onrender.com/" target="_blank"><i data-feather="external-link"></i></a>
+
+          <div class="swiper-slide flex-row">
+            <picture>
+              <a href="https://treasure-mhx1.onrender.com/" target="_blank"><img src="./src/assets/treasure.jpg" alt="reels screenshot" /></a>
+            </picture>
+            <div class="project_details flex-col align-end justify-center">
+              <a href="https://treasure-mhx1.onrender.com/" target="_blank"><h2>Treasure</h2></a>
+              <p class="end">A clone of an award-winning ecommerce site, <a href="https://www.rollienation.com/">Rollies</a>, where users can do online shopping, leave a review of products they bought, and search for various online store products.</p>
+              <div class="project_technology">
+                <span>React/Redux</span>
+                <span>MongoDB</span>
+                <span>Express.js</span>
+                <span>Node.js</span>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/safetyboi/Treasure" target="_blank"><i data-feather="github"></i></a>
+                <a href="https://treasure-mhx1.onrender.com/" target="_blank"><i data-feather="external-link"></i></a>
+              </div>
+            </div>
           </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
     </section>
   </main>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
   <script>
+    // Feather Icon JS
     feather.replace();
+
+    // Initialize Swiper
+    const swiper = new Swiper(".projectSwiper", {
+      pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 </html>

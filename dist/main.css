@@ -223,47 +223,57 @@ nav p {
   font-size: 50%;
 }
 
+#projects h1 {
+  margin-bottom: 10vh;
+}
 #projects h2 {
   font-size: 1.5vw;
   font-weight: bold;
   color: var(--red);
 }
-#projects .section > p {
+#projects .swiper {
+  overflow-x: hidden;
+  max-width: 70vw;
+}
+#projects .swiper .swiper-slide > p {
   cursor: pointer;
 }
-#projects .section span {
+#projects .swiper .swiper-slide {
+  max-width: 70vw;
+}
+#projects .swiper .swiper-slide span {
   margin: 0 1vw;
 }
-#projects .section picture {
+#projects .swiper .swiper-slide picture {
   width: 60vw;
   margin-right: 1vw;
 }
-#projects .section picture img {
+#projects .swiper .swiper-slide picture img {
   width: 100%;
   border-radius: var(--border-radius);
 }
-#projects .section .project_details > * {
+#projects .swiper .swiper-slide .project_details > * {
   margin: 1vh 0;
 }
-#projects .section .project_details {
+#projects .swiper .swiper-slide .project_details {
   width: 50%;
 }
-#projects .section .project_details p {
+#projects .swiper .swiper-slide .project_details p {
   background-color: var(--light-brown);
   padding: 3vh 2vw;
   border-radius: var(--border-radius);
   z-index: 9;
 }
-#projects .section .project_details p.start {
+#projects .swiper .swiper-slide .project_details p.start {
   margin-right: -7vw;
 }
-#projects .section .project_details p.end {
+#projects .swiper .swiper-slide .project_details p.end {
   margin-left: -7vw;
 }
-#projects .section .project_details .project_technology {
+#projects .swiper .swiper-slide .project_details .project_technology {
   font-size: 70%;
 }
-#projects .section .project_details .project_technology span {
+#projects .swiper .swiper-slide .project_details .project_technology span {
   margin: 0 5px;
   font-weight: bold;
 }
