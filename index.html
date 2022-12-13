@@ -7,16 +7,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- CSS links -->
-  <link rel="stylesheet" href="./src/styles/reset.scss">
-  <link rel="stylesheet" href="./dist/main.js">
+  <link rel="stylesheet" href="./dist/main.css">
 
   <!-- JS scripts -->
   <script src="./dist/main.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@200;500;800&display=swap" rel="stylesheet">
   
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
   <title>Safitri Shelton</title>
 </head>
 
 <body>
-  
+  <!-- Navigation  -->
+  <nav class="flex-col justify-between">
+    <div class="nav_icons_container flex-col align-center">
+      <div class="border-vertical"></div>
+      <a href="https://github.com/fee3fitri" target="_blank"><i data-feather="github"></i></a>
+      <a href="https://www.linkedin.com/in/safitri-shelton/" target="_blank"><i data-feather="linkedin"></i></a>
+      <a href="mailto:safitri.shelton@gmail.com?subject=Hello"><i data-feather="mail"></i></a>
+    </div>
+    <p>&#169; / 2022</p>
+  </nav>
+
+  <main>
+    <section id="home" class="flex-col justify-center">
+      <p>Hi, my name is</p>
+      <h1>SAFITRI SHELTON,</h1>
+      <h2>A SOFTWARE ENGINEER</h2>
+    </section>
+
+    <section id="about" class="flex-col justify-center">
+      <h1>About Me</h1>
+      <div class="section">
+        <p>Hello! My name is Safitri (aka Fifi) and I enjoy creating things for the web. My interest in web development grew when I moved to the US 4 years ago. I was going into a simple mission to replace the color of a button for one of custom Wordress - turns out that I fell in love to the excitement of creating things with code.</p>
+      </div>
+      <div class="section">
+        <p>My passion in web technology pushes me to keep learning. I took a course as a software QA analyst where I learned the quality and testing aspect of the software. This course helped me to land a position as a QA analyst for one of the Google projects.</p>
+      </div>
+      <div class="section">
+        <p>After a few years doing QA, I want to pursue more technical challenging career. That was when I decided to become a software engineer. I recently graduated from App Academy 16 week software enginering intensive program.</p>
+        <p>Right now, I'm interested to build <strong>human-centered products</strong> with <strong>intuitive</strong>, <strong>dynamic user experiences</strong>.</p>
+      </div>
+      <a href="mailto:safitri.shelton@gmail.com?subject=Hello">Let's make something special!</a>
+    </section>
+  </main>
+
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>

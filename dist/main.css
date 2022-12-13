@@ -1,0 +1,187 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --cream: #ded9ca;
+  --brown: #3b352e;
+  --gray: #575551;
+  --red: #c51350;
+  --pink: #d44e7c;
+  --sans-serif: "Montserrat", sans-serif;
+  --serif: "Alice", serif;
+  --cursive: "Cinzel Decorative", cursive;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--brown);
+  font-size: 1.1vw;
+  font-family: var(--sans-serif);
+  line-height: 1.5;
+  padding: 0 5vw;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 6vw;
+  font-weight: 800;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--red);
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  padding: 0 5vw 0 15vw;
+}
+
+.border-vertical {
+  height: 15vh;
+  border-left: 3px solid var(--brown);
+  margin-bottom: 2vh;
+}
+
+.border-horizontal {
+  width: 5vw;
+  border-top: 3px solid var(--brown);
+}
+
+.section {
+  margin: 2vh 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  bottom: 5vh;
+}
+nav a {
+  margin: 1vh 0;
+  color: var(--brown);
+}
+nav p {
+  transform: rotate(270deg);
+  font-size: 90%;
+  font-weight: 200;
+}
+
+#home h1 {
+  font-size: 6vw;
+  font-weight: 800;
+}
+#home h2 {
+  font-family: var(--sans-serif);
+  font-size: 2vw;
+  letter-spacing: 1vw;
+}
+#home p {
+  font-size: 1.5vw;
+}
