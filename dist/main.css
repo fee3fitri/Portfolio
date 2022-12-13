@@ -233,13 +233,27 @@ nav p {
 }
 #projects .swiper {
   overflow-x: hidden;
-  max-width: 70vw;
+  max-width: 72vw;
+  height: 50vh;
+}
+#projects .swiper .swiper-button-prev,
+#projects .swiper .swiper-button-next {
+  transform: scale(0.7);
+  color: var(--red);
+  top: 40%;
+}
+#projects .swiper .swiper-button-prev {
+  left: 0;
+}
+#projects .swiper .swiper-button-next {
+  right: 0;
 }
 #projects .swiper .swiper-slide > p {
   cursor: pointer;
 }
 #projects .swiper .swiper-slide {
-  max-width: 70vw;
+  max-width: 67vw;
+  padding: 0 3vw;
 }
 #projects .swiper .swiper-slide span {
   margin: 0 1vw;

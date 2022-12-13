@@ -76,15 +76,32 @@
 
   .swiper {
     overflow-x: hidden;
-    max-width: 70vw;
+    max-width: 72vw;
+    height: 50vh;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      transform: scale(.7);
+      color: var(--red);
+      top: 40%;
+    } 
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
 
     .swiper-slide > p {
       cursor: pointer;
     }
   
     .swiper-slide {
-      max-width: 70vw;
-  
+      max-width: 67vw;
+      padding: 0 3vw;
+
       span {
         margin: 0 1vw;
       }
