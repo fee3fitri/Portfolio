@@ -57,6 +57,7 @@ table {
 
 :root {
   --cream: #ded9ca;
+  --light-brown: #c2bcac;
   --brown: #3b352e;
   --gray: #575551;
   --red: #c51350;
@@ -64,6 +65,7 @@ table {
   --sans-serif: "Montserrat", sans-serif;
   --serif: "Alice", serif;
   --cursive: "Cinzel Decorative", cursive;
+  --border-radius: 1vw;
   overflow-x: hidden;
 }
 
@@ -190,12 +192,12 @@ nav p {
   font-size: 1.05vw;
 }
 #about picture {
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
 }
 #about picture img {
   max-width: 100%;
-  margin-left: 5vw;
+  margin-left: 4vw;
   border-radius: 50%;
   padding: 1vw;
 }
@@ -210,6 +212,58 @@ nav p {
   width: 20%;
 }
 #skills ul li {
-  list-style-type: circle;
-  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+}
+#skills ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f04b";
+  font-weight: 900;
+  margin-right: 5px;
+  font-size: 50%;
+}
+
+#projects h2 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: var(--red);
+}
+#projects .section > p {
+  cursor: pointer;
+}
+#projects .section span {
+  margin: 0 1vw;
+}
+#projects .section picture {
+  width: 60vw;
+  margin-right: 1vw;
+}
+#projects .section picture img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+#projects .section .project_details > * {
+  margin: 1vh 0;
+}
+#projects .section .project_details {
+  width: 50%;
+}
+#projects .section .project_details p {
+  background-color: var(--light-brown);
+  padding: 3vh 2vw;
+  border-radius: var(--border-radius);
+  z-index: 9;
+}
+#projects .section .project_details p.start {
+  margin-right: -7vw;
+}
+#projects .section .project_details p.end {
+  margin-left: -7vw;
+}
+#projects .section .project_details .project_technology {
+  font-size: 70%;
+}
+#projects .section .project_details .project_technology span {
+  margin: 0 5px;
+  font-weight: bold;
 }
