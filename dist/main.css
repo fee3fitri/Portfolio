@@ -98,7 +98,7 @@ strong {
 
 section {
   height: 100vh;
-  padding: 0 5vw 0 15vw;
+  padding: 0 10vw 0 10vw;
 }
 
 .border-vertical {
@@ -113,7 +113,7 @@ section {
 }
 
 .section {
-  margin: 2vh 0;
+  margin: 4vh 0;
 }
 
 .flex-row {
@@ -184,4 +184,32 @@ nav p {
 }
 #home p {
   font-size: 1.5vw;
+}
+
+#about p {
+  font-size: 1.05vw;
+}
+#about picture {
+  width: 25vw;
+  height: 25vw;
+}
+#about picture img {
+  max-width: 100%;
+  margin-left: 5vw;
+  border-radius: 50%;
+  padding: 1vw;
+}
+#about .section-wrapper {
+  width: 65%;
+}
+
+#skills p {
+  margin: 1vh 0;
+}
+#skills ul {
+  width: 20%;
+}
+#skills ul li {
+  list-style-type: circle;
+  margin-left: 1vw;
 }
