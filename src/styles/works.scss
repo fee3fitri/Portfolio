@@ -1,36 +1,30 @@
 #works {
-  .workplace {
-    width: 35%;
+  .workSwiper {
+    max-height: 45vh;
+    margin: 5vh 0;
 
-    h3 {
-      margin: 0;
-      padding: 2vh 2vw;
-      border-left: 1px solid rgba(197, 19, 80, .3);
-      cursor: pointer;
+    .swiper-wrapper {
+      display: flex;
+      justify-content: start;
     }
 
-    h3:active, :hover {
-      color: var(--red);
-      background-color: rgba(197, 19, 80, .1);
-      border-left: 10px solid rgba(197, 19, 80, .3);
-    }
-  }
-
-  .work_details_wrapper {
-    width: 60%;
-    margin-left: 3vw;
-    margin-top: 2vh;
-
-    .work_details {
+    .swiper-slide {
+      width: 60vw;
+  
       h2 {
         color: var(--red);
         font-weight: bold;
+        font-size: 110%;
       }
   
       h4 {
         font-weight: 200;
       }
-
+  
+      li {
+        margin-bottom: 1vh;
+      }
+  
       li:before {
         position: relative;
         top: .75vh;
@@ -40,6 +34,10 @@
       .work_title {
         margin-bottom: 4vh;
       }
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: var(--red);
     }
   }
 }

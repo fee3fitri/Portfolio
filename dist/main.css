@@ -66,6 +66,7 @@ table {
   --sans-serif: "Montserrat", sans-serif;
   --serif: "Baskervville", serif;
   --border-radius: 1vw;
+  overflow: hidden;
 }
 
 body {
@@ -180,12 +181,18 @@ nav p {
   font-size: 90%;
   font-weight: 200;
 }
-nav img {
+nav .logo {
   height: 10vh;
   position: fixed;
   top: 5vh;
-  cursor: pointer;
   z-index: 1;
+}
+nav .logo svg {
+  height: 100%;
+  cursor: pointer;
+}
+nav .logo .cls-1:hover {
+  fill: var(--red);
 }
 nav .nav_icons_container {
   position: fixed;
@@ -212,18 +219,21 @@ nav .nav_icons_container {
 #home {
   position: relative;
   top: 0;
+  left: 3vw;
 }
 #home h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 800;
+  margin: 1vh 0;
+  letter-spacing: 2px;
 }
 #home h2 {
   font-family: var(--sans-serif);
-  font-size: 2vw;
+  font-size: 2.5vw;
   letter-spacing: 1vw;
 }
 #home p {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
 #about p {
@@ -371,37 +381,36 @@ nav .nav_icons_container {
   font-weight: bold;
 }
 
-#works .workplace {
-  width: 35%;
+#works .workSwiper {
+  max-height: 45vh;
+  margin: 5vh 0;
 }
-#works .workplace h3 {
-  margin: 0;
-  padding: 2vh 2vw;
-  border-left: 1px solid rgba(197, 19, 80, 0.3);
-  cursor: pointer;
+#works .workSwiper .swiper-wrapper {
+  display: flex;
+  justify-content: start;
 }
-#works .workplace h3:active, #works .workplace :hover {
-  color: var(--red);
-  background-color: rgba(197, 19, 80, 0.1);
-  border-left: 10px solid rgba(197, 19, 80, 0.3);
+#works .workSwiper .swiper-slide {
+  width: 60vw;
 }
-#works .work_details_wrapper {
-  width: 60%;
-  margin-left: 3vw;
-  margin-top: 2vh;
-}
-#works .work_details_wrapper .work_details h2 {
+#works .workSwiper .swiper-slide h2 {
   color: var(--red);
   font-weight: bold;
+  font-size: 110%;
 }
-#works .work_details_wrapper .work_details h4 {
+#works .workSwiper .swiper-slide h4 {
   font-weight: 200;
 }
-#works .work_details_wrapper .work_details li:before {
+#works .workSwiper .swiper-slide li {
+  margin-bottom: 1vh;
+}
+#works .workSwiper .swiper-slide li:before {
   position: relative;
   top: 0.75vh;
   margin-right: 2vw;
 }
-#works .work_details_wrapper .work_details .work_title {
+#works .workSwiper .swiper-slide .work_title {
   margin-bottom: 4vh;
+}
+#works .workSwiper .swiper-pagination-bullet-active {
+  background: var(--red);
 }

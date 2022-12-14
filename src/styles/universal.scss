@@ -10,7 +10,7 @@
   --sans-serif: 'Montserrat', sans-serif;
   --serif: 'Baskervville', serif;
   --border-radius: 1vw;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 
@@ -134,12 +134,20 @@ nav {
     font-weight: 200;
   }
 
-  img {
+  .logo {
     height: 10vh;
     position: fixed;
     top: 5vh;
-    cursor: pointer;
     z-index: 1;
+
+    svg {
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .cls-1:hover {
+      fill: var(--red);
+    }
   }
 
   .nav_icons_container {
