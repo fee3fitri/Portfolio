@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@200;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@200;500;800&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/e4095fb22d.js" crossorigin="anonymous"></script>
@@ -24,19 +24,24 @@
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/src/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="/src/assets/favicon/favicon.png">
+
   <title>Safitri Shelton</title>
 </head>
 
 <body>
   <!-- Navigation  -->
   <nav class="flex-col justify-between">
+    <a href="#"><img src="./src/assets/logo.svg" alt="logo"></a>
     <div class="nav_icons_container flex-col align-center">
-      <div class="border-vertical"></div>
       <a href="https://github.com/fee3fitri" target="_blank"><i data-feather="github"></i></a>
       <a href="https://www.linkedin.com/in/safitri-shelton/" target="_blank"><i data-feather="linkedin"></i></a>
       <a href="mailto:safitri.shelton@gmail.com?subject=Hello"><i data-feather="mail"></i></a>
+      <div class="border-vertical"></div>
     </div>
-    <p>&#169; / 2022</p>
+    <!-- <p>&#169; / 2022</p> -->
   </nav>
 
   <div class="nav flex-row align-center">
@@ -66,7 +71,7 @@
       <div class="flex-row">
         <div class="section-wrapper">
           <div class="section">
-            <p>Hello! My name is Safitri (aka Fifi) and I enjoy creating things for the web. My interest in web development grew when I moved to the US 4 years ago. I was going into a simple mission to replace the color of a button for one of custom Wordress - turns out that I fell in love to the excitement of creating things with code.</p>
+            <p>Hello! My name is Safitri (Fifi) and I enjoy creating things for the web. My interest in web development grew when I played around with Wordpress CMS. I was going into a simple mission to replace the color of a button for a theme - turns out that I fell in love to the excitement of creating things with code.</p>
           </div>
           <div class="section">
             <p>My passion in web technology pushes me to keep learning. And eventually it helped me to land a position as a QA analyst for one of the Google projects. After a few years doing QA, I want to pursue more technical challenging career. That was when I decided to become a software engineer.</p>
@@ -234,7 +239,7 @@
           <h3>Internet Research &#38; Marketing</h3>
         </div>
         <div class="work_details_wrapper">
-          <div class="work_details">
+          <div id="qa_analyst" class="work_details active">
             <div class="work_title">
               <h2>Quality Assurance Analyst</h2>
               <h3>Google through Accenture</h3>
@@ -247,7 +252,7 @@
               <li>Collaborated with software engineers to improve UI/UX of internal content review tools.</li>
             </ul>
         </div>
-        <div class="work_details">
+        <div id="qa_tester" class="work_details" style="display: none;">
           <div class="work_title">
             <h2>Software QA Tester</h2>
             <h3>Iriol Software Ltd.</h3>
@@ -258,7 +263,7 @@
             <li>Developed test plans and generated test cases for different parts of the application, conducted variance management by analyzing and verifying test results, providing status and progress reports using TestLink test management utility.</li>
           </ul>
         </div>
-        <div class="work_details">
+        <div id="research" class="work_details" style="display: none;">
           <div class="work_title">
             <h2>Internet Research and Marketing</h2>
             <h3>Freelance - LionBridge, Clickworker, Teraneuro</h3>

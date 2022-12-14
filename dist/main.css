@@ -64,10 +64,8 @@ table {
   --red: #c51350;
   --pink: #d44e7c;
   --sans-serif: "Montserrat", sans-serif;
-  --serif: "Alice", serif;
-  --cursive: "Cinzel Decorative", cursive;
+  --serif: "Baskervville", serif;
   --border-radius: 1vw;
-  overflow-x: hidden;
 }
 
 body {
@@ -173,11 +171,6 @@ section {
   align-items: end;
 }
 
-nav {
-  position: fixed;
-  height: 100vh;
-  bottom: 5vh;
-}
 nav a {
   margin: 1vh 0;
   color: var(--brown);
@@ -187,23 +180,41 @@ nav p {
   font-size: 90%;
   font-weight: 200;
 }
+nav img {
+  height: 10vh;
+  position: fixed;
+  top: 5vh;
+  cursor: pointer;
+  z-index: 1;
+}
+nav .nav_icons_container {
+  position: fixed;
+  bottom: -5vh;
+  z-index: 1;
+}
 
 .nav {
   position: fixed;
   height: 100vh;
   transform: rotate(90deg);
   right: -8vw;
+  top: 0;
+  z-index: 1;
 }
 .nav a {
   color: var(--brown);
   margin: 0 1vw;
 }
-.nav a:hover {
+.nav a:hover, .nav a:active {
   color: var(--red);
 }
 
+#home {
+  position: relative;
+  top: 0;
+}
 #home h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 800;
 }
 #home h2 {
@@ -369,26 +380,28 @@ nav p {
   border-left: 1px solid rgba(197, 19, 80, 0.3);
   cursor: pointer;
 }
-#works .workplace h3:hover {
+#works .workplace h3:active, #works .workplace :hover {
   color: var(--red);
   background-color: rgba(197, 19, 80, 0.1);
+  border-left: 10px solid rgba(197, 19, 80, 0.3);
 }
 #works .work_details_wrapper {
   width: 60%;
   margin-left: 3vw;
+  margin-top: 2vh;
 }
-#works .work_details_wrapper h2 {
+#works .work_details_wrapper .work_details h2 {
   color: var(--red);
   font-weight: bold;
 }
-#works .work_details_wrapper h4 {
+#works .work_details_wrapper .work_details h4 {
   font-weight: 200;
 }
-#works .work_details_wrapper li:before {
+#works .work_details_wrapper .work_details li:before {
   position: relative;
   top: 0.75vh;
   margin-right: 2vw;
 }
-#works .work_details_wrapper .work_title {
+#works .work_details_wrapper .work_details .work_title {
   margin-bottom: 4vh;
 }

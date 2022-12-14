@@ -8,10 +8,9 @@
   --red: #c51350;
   --pink: #d44e7c;
   --sans-serif: 'Montserrat', sans-serif;
-  --serif: 'Alice', serif;
-  --cursive: 'Cinzel Decorative', cursive;
+  --serif: 'Baskervville', serif;
   --border-radius: 1vw;
-  overflow-x: hidden;
+  // overflow: hidden;
 }
 
 
@@ -124,10 +123,6 @@ section {
 
 // Navigation CSS
 nav {
-  position: fixed;
-  height: 100vh;
-  bottom: 5vh;
-
   a {
     margin: 1vh 0;
     color: var(--brown);
@@ -138,6 +133,20 @@ nav {
     font-size: 90%;
     font-weight: 200;
   }
+
+  img {
+    height: 10vh;
+    position: fixed;
+    top: 5vh;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .nav_icons_container {
+    position: fixed;
+    bottom: -5vh;
+    z-index: 1;
+  }
 }
 
 .nav {
@@ -145,13 +154,15 @@ nav {
   height: 100vh;
   transform: rotate(90deg);
   right: -8vw;
+  top: 0;
+  z-index: 1;
 
   a { 
     color: var(--brown);
     margin: 0 1vw;
   }
 
-  a:hover {
+  a:hover, a:active {
     color: var(--red);
   }
 }
