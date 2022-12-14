@@ -4,6 +4,7 @@
   --light-brown: #c2bcac;
   --brown: #3b352e;
   --gray: #575551;
+  --light-gray: #bab8b5;
   --red: #c51350;
   --pink: #d44e7c;
   --sans-serif: 'Montserrat', sans-serif;
@@ -28,6 +29,18 @@ h1 {
   font-family: var(--serif);
   font-size: 6vw;
   font-weight: 800;
+}
+
+li {
+  display: flex;
+}
+
+li:before {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f04b";
+  font-weight: 900;
+  margin-right: 5px;
+  font-size: 50%;
 }
 
 a {
