@@ -139,3 +139,19 @@ nav {
     font-weight: 200;
   }
 }
+
+.nav {
+  position: fixed;
+  height: 100vh;
+  transform: rotate(90deg);
+  right: -8vw;
+
+  a { 
+    color: var(--brown);
+    margin: 0 1vw;
+  }
+
+  a:hover {
+    color: var(--red);
+  }
+}

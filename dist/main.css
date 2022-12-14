@@ -188,6 +188,20 @@ nav p {
   font-weight: 200;
 }
 
+.nav {
+  position: fixed;
+  height: 100vh;
+  transform: rotate(90deg);
+  right: -8vw;
+}
+.nav a {
+  color: var(--brown);
+  margin: 0 1vw;
+}
+.nav a:hover {
+  color: var(--red);
+}
+
 #home h1 {
   font-size: 6vw;
   font-weight: 800;
