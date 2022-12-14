@@ -1,0 +1,97 @@
+#projects {
+  h1 {
+    margin-bottom: 10vh;
+  }
+
+  h2 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: var(--red);
+  }
+
+  .swiper {
+    overflow-x: hidden;
+    max-width: 72vw;
+    height: 55vh;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      transform: scale(.7);
+      color: var(--red);
+      top: 40%;
+    } 
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--red);
+    }
+
+    .swiper-slide > p {
+      cursor: pointer;
+    }
+  
+    .swiper-slide {
+      max-width: 67vw;
+      padding: 0 3vw;
+
+      span {
+        margin: 0 1vw;
+      }
+  
+      picture {
+        width: 60vw;
+        margin-right: 1vw;
+  
+        img {
+          width: 100%;
+          border-radius: var(--border-radius);
+        }
+
+        img:hover {
+          transform: scale(1.05);
+          border-radius: var(--border-radius);
+        }
+      }
+  
+      .project_details > * {
+        margin: 1vh 0;
+      }
+  
+      .project_details {
+        width: 50%;
+  
+        p {
+          background-color: var(--light-brown);
+          padding: 3vh 2vw;
+          border-radius: var(--border-radius);
+          z-index: 9;
+        }
+  
+        p.start {
+          margin-right: -7vw;
+        }
+  
+        p.end {
+          margin-left: -7vw;
+        }
+  
+        .project_technology {
+          font-size: 70%;
+          z-index: 9;
+  
+          span {
+            margin: 0 5px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

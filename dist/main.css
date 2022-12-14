@@ -269,6 +269,20 @@ nav p {
   background-color: var(--light-gray);
 }
 
+#get_in_touch .section {
+  width: 70%;
+}
+#get_in_touch a {
+  display: inline-block;
+  padding: 2vh 1vw;
+  border: 2px solid var(--red);
+  border-radius: 10px;
+  margin-right: 1vw;
+}
+#get_in_touch a:hover {
+  background-color: rgba(197, 19, 80, 0.1);
+}
+
 #projects h1 {
   margin-bottom: 10vh;
 }
@@ -377,18 +391,4 @@ nav p {
 }
 #works .work_details_wrapper .work_title {
   margin-bottom: 4vh;
-}
-
-#get_in_touch .section {
-  width: 70%;
-}
-#get_in_touch a {
-  display: inline-block;
-  padding: 2vh 1vw;
-  border: 2px solid var(--red);
-  border-radius: 10px;
-  margin-right: 1vw;
-}
-#get_in_touch a:hover {
-  background-color: rgba(197, 19, 80, 0.1);
 }
