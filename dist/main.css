@@ -247,21 +247,25 @@ nav p {
 }
 #skills .skills_bar {
   width: 40%;
+  margin-top: 2vh;
 }
 #skills .skills_bar .bar {
-  width: 100%;
   font-size: 1vw;
+  margin: -1vh 0;
 }
 #skills .skills_bar .bar h3 {
-  width: 22%;
-  padding: 1vh 1vw;
+  width: 20%;
+  padding: 1vh 0.75vw;
   background-color: var(--red);
   color: white;
+  z-index: 10;
 }
 #skills .skills_bar .bar p {
-  width: 70%;
-  text-align: right;
   padding: 1vh 1vw;
+  text-align: right;
+  background-color: var(--light-gray);
+}
+#skills .skills_bar .bar .bar_fill {
   background-color: var(--light-gray);
 }
 
@@ -311,6 +315,10 @@ nav p {
   width: 100%;
   border-radius: var(--border-radius);
 }
+#projects .swiper .swiper-slide picture img:hover {
+  transform: scale(1.05);
+  border-radius: var(--border-radius);
+}
 #projects .swiper .swiper-slide .project_details > * {
   margin: 1vh 0;
 }
@@ -331,6 +339,7 @@ nav p {
 }
 #projects .swiper .swiper-slide .project_details .project_technology {
   font-size: 70%;
+  z-index: 9;
 }
 #projects .swiper .swiper-slide .project_details .project_technology span {
   margin: 0 5px;
